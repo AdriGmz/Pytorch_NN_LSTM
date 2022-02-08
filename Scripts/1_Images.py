@@ -17,9 +17,9 @@ matplotlib.rcParams['font.size'] = 11
 
 #PATHS
 path_base    = os.path.dirname(os.path.abspath(__file__)) + '/'
-path_data    = path_base + 'data/'
-path_images  = path_base + 'images/1_Images/'
-path_results = path_base + 'results/1_Images/'
+path_data    = path_base + '../data/'
+path_images  = path_base + '../images/1_Images/'
+path_results = path_base + '../results/1_Images/'
 
 #Data
 batch_size = 64
@@ -149,4 +149,4 @@ for n_nodes_1 in nod_lay1:
 DF_results.to_csv(path_results+'Results_NN_LSTM_'+str(N_layer)+'L.csv')
 
 best = get_best_models (DF_results)
-print (best)
+print ('Best models', best)
