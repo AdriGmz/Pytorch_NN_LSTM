@@ -149,4 +149,4 @@ for n_nodes_1 in nod_lay1:
 DF_results.to_csv(path_results+'Results_NN_LSTM_'+str(N_layer)+'L.csv')
 
 best = get_best_models (DF_results)
-
+print (best)
